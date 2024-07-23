@@ -10,6 +10,18 @@ const sequelize = require('./config/connection.js')
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// want users in a database but for testing purposes the local variable is ok
+const users = [];
+
+// dont want to have a real route that exposes users password information, this below is for testing purposes
+app.get('/users', (req, res) => {
+  res.json(users)
+})
+
+app.post('/users', )
+
+app.listen(3000);
+
 const sess = {
   secret: "Super secret secret",
   cookie: {
