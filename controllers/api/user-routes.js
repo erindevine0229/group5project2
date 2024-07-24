@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
-const User = require('../../modules');
+const {User} = require('../../models');
 
 //create new user
 router.post("/", async (req, res) => {
