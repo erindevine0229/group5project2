@@ -1,1 +1,2 @@
-# group5project2
+# Find-A-Hike
+
