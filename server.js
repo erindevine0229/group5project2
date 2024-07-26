@@ -40,3 +40,7 @@ sequelize.sync({ force: false }).then(() => {
     console.log("Server is listening");
   });
 });
+
+console.log("Hi guys!");
+
+// Bob do something
