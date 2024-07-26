@@ -43,3 +43,4 @@ sequelize.sync({ force: false }).then(() => {
 
 
 // Bob do something
+// How bad could this possibly be? - Daniel
