@@ -16,6 +16,15 @@ User.init(
       autoIncrement: true,
     },
 
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
+    },
+
     username: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -37,6 +46,7 @@ User.init(
       },
     },
   },
+
   {
     hooks: {
       beforeCreate: async (newUserInfo) => {
