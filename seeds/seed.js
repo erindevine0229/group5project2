@@ -17,15 +17,16 @@ const seedDatabase = async () => {
         returning: true,
       });
 
+      await Location.bulkCreate(locationData, {
+        individualHooks: true,
+        returning: true,
+    });
+
       await Event.bulkCreate(eventData, {
         individualHooks: true,
         returning: true,
     });
 
-    await Location.bulkCreate(locationData, {
-        individualHooks: true,
-        returning: true,
-    });
 };
     
 seedDatabase();
