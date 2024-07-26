@@ -41,6 +41,5 @@ sequelize.sync({ force: false }).then(() => {
   });
 });
 
-console.log("Hi guys!");
 
 // Bob do something
