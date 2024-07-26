@@ -22,7 +22,7 @@ const sess = {
   },
   resave: false,
   saveUninitialized: true,
-  store: new SequilizeStore({
+  store: new SequelizeStore({
     db: sequelize,
   }),
 
@@ -30,8 +30,6 @@ const sess = {
 
 app.use(session(sess));
 
-
-const hbs = exphbs.create({}); //can be used for helper file
 
 
 app.engine('handlebars', hbs.engine);
