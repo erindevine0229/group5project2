@@ -15,6 +15,11 @@ Event.init(
       autoIncrement: true,
     },
 
+    event_title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+
     event_content: {
       type: DataTypes.TEXT,
       allowNull: false,
