@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HomePage</title>
 </head>
 
 <body>
-    <h1>Find your outside Or Create a new event!</h1>
+    <h1>Find your outside adventure Or Create a new event!</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -42,8 +42,8 @@
         </a>
     </div>
     <div>
-        {{#each events as |event|}}
-        {{> event-details}}
+        {{#each events as |Event|}}
+        {{> event-details Event=Event}}
         {{/each}}
     </div>
 </body>
