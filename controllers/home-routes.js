@@ -48,7 +48,6 @@ router.get('/event/:event_id', withAuth, async (req, res) =>{
     }
 });
 
-
 router.get('/login', async (req, res) => {
     res.render('login')
 });
