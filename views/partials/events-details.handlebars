@@ -1,6 +1,9 @@
 <section class="card">
-    <a href="/event/{{Event.event_id}}">
-        <header>{{Event.event_author}}</header>
-        <img src="/images/{{Event.locations.[0].filename}}" alt="{{Event.locations.[0].description}}">
-    </a>
+  <a href="/event/{{Event.event_id}}">
+    <header>{{Event.event_title}}</header>
+    <p>Posted By: {{Event.event_author}}</p>
+    <p>Details: {{Event.event_content}}</p>
+    {{!-- <img src="/images/{{Location.filename}}" alt="{{Location.location_name}}"> --}}
+    <p>Location: {{Location.location_name}}, {{Location.zip_code}}</p>
+  </a>
 </section>

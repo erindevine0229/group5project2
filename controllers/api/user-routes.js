@@ -73,4 +73,16 @@ if (req.session.loggedIn) {
 }
 });
 
+
+// sign-up
+
+router.get("/signup", async (req, res) => {
+  try {
+    res.render("/signup"); // Render the signup.handlebars template
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Server Error" });
+  }
+});
+
 module.exports = router;
