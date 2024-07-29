@@ -42,8 +42,10 @@
         </a>
     </div>
     <div>
-        {{#each events as |Event|}}
-        {{> event-details Event=Event}}
+
+        {{#each events as |event|}}
+        {{> events-details}}
+
         {{/each}}
     </div>
 </body>
