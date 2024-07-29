@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const {Event, Location} = require('../../models');
-const { withAuth } = require('../../utils/auth');
+const {Event, Location} = require('../models');
+const { withAuth } = require('../utils/auth');
 
 //GET all events
 router.get('/', async (req, res)=>{
@@ -30,7 +30,7 @@ router.get('/', async (req, res)=>{
 // GET one event
 router.get('/event/:event_id', withAuth, async (req, res) =>{
     try {
-      const eventData = await Event.findByPk(req.params.id, {
+      const eventData = await Event.findByPk(req.params.event_id, {
         include: [{
             model: Location,
             attributes:[
