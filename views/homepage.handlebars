@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <h1>Find your outside adventure Or Create a new event!</h1>
+    <h1>Find your outside Or Create a new event!</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -41,12 +41,13 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
- <!-- events-details partial -->
-<div>
-    {{#each events as |event|}}
-        {{> events-details}}
-    {{/each}}
-</div>
+    <div class="eventBox">
+        <div class="events">
+            {{#each events as |event|}}
+            {{> events-details}}
+            {{/each}}
+        </div>
+    </div>
 </body>
 
 </html>
