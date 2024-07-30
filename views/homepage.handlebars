@@ -9,7 +9,7 @@
 
 <body>
     <div>
-        {{time_and_date}}
+        <div id="currentDateTime"></div>
     </div>
     <h1>Find your outside Or Create a new event!</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -51,6 +51,14 @@
             {{/each}}
         </div>
     </div>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script>
+    // Get the current date and time using Moment.js
+    const currentDate = moment().format('MMMM Do YYYY');
+    const currentTime = moment().format('h:mm:ss a');
+    
+    // Display the date and time in the specified element
+    document.getElementById('currentDateTime').innerText = `Today is ${currentDate} and the time is ${currentTime}`;
+</script>
+    </body>
 </html>
