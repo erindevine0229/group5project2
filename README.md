@@ -15,7 +15,7 @@ The application is designed using RESTful API practices and MVC Framework. Other
 
   Image of example event post:
   
-  NEED TO ADD IMAGE STILL
+  ![eventpost](https://github.com/user-attachments/assets/1a03ebf4-e5ef-48bd-8f32-77aa8c6c7e31)
 
   
 ## Installation
