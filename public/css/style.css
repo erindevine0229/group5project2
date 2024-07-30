@@ -177,3 +177,8 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
+#currentDateTime {
+  text-align: center;
+  font-size: 20px;
+}
