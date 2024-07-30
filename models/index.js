@@ -16,12 +16,12 @@ User.hasMany(Event, {
     foreignKey: 'event_author',
 });
 // Each Event may have only one location
-Event.hasOne(Location, {
-    foreignKey: 'event_location',
+Event.belongsTo(Location, {
+    foreignKey: 'location_id',
 });
 // Each Event can have many Users as attendees
 Event.hasMany(User, {
-    foreignKey: 'event_attendees',
+    foreignKey: 'user_id',
 });
 //  Each Location can have many Events taking place there
 Location.hasMany(Event, {
